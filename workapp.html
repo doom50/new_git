@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello vue.js</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="app">
+        <h2>TODO</h2>
+        <form v-on:submit.prevent>
+            <input type="text">
+            <button v-on:click="addItem">
+                追加する
+            </button>
+            <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+            <script src="js/main.js"></script>
+</body>
+
+</html>
