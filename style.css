@@ -231,7 +231,7 @@ main p {
   text-align: left;
   padding: 0 100px 50px;
   width: 100%;
-  margin: 0 100px 0;
+  margin: auto;
   letter-spacing: 0.2em;
   font-family: helvetica;
   font-weight: normal;
@@ -254,6 +254,3 @@ main p {
   display:  block !important;
 }
 
-.body {
-  overflow: hidden;
-}
