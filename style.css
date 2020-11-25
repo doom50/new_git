@@ -123,7 +123,7 @@ main p {
   font-weight: lighter;
   font-size: smaller;
   margin: 5px 10px;
-  width: 400px;
+  /* width: 400px; */
   display: inline-block;
 }
 .about {
@@ -254,3 +254,6 @@ main p {
   display:  block !important;
 }
 
+.prof {
+  text-align: center;
+}
