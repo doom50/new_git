@@ -228,7 +228,8 @@ main p {
 .dips {
   text-align: left;
   padding: 0 100px 50px;
-  width: 120%;
+  width: 100%;
+  margin: auto;
   letter-spacing: 0.2em;
   font-family: helvetica;
   font-weight: normal;
