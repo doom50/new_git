@@ -229,7 +229,7 @@ main p {
   text-align: left;
   padding: 0 100px 50px;
   width: 100%;
-  margin: auto;
+  margin: 0 100px 0;
   letter-spacing: 0.2em;
   font-family: helvetica;
   font-weight: normal;
