@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>My Portfolio</title>
+    <meta name="descriotion" contents="This is my portfolio">
+    <link rel="icon" href="images/読書のアイコン.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid top">
+        <h1>My Portfolio</h1>
+        <p><img src="images/3a8e048c.jpg" alt="main_images" class="img-fluid w-100">
+        </p>
+
+
+        <header>
+            <div class="row">
+                <div class="col glo"><p><a href="index.html">HOME</a></p></div>
+                <div class="col glo"><p><a href="contact.html">PROFILE</a></p></div>
+                <div class="col glo"><p><a href="works.html">WORKS</a></p></div>
+            </div>
+        </header>
+    </div>
+    <!--メインコンテナ------------------------------------------------>
+    <div class="container">
+        <article class=" works_container">
+            <h2 class="title">WORKS</h2>
+            <hr class="divider">
+
+            <div id="app" class="todo_container">
+                <div class="container">
+                    <h2>TODO LIST</h2>
+                    <p class="dips">JavaScriptで動くTODOアプリケーションです。<br>
+                        以下の操作が可能です。<br>
+                        １　テキストボックスへタスクを入力<br>
+                        ２　「追加する」ボタンでのタスクを追加<br>
+                        ３　タスクが完了したらチェックボックスをクリック<br>
+                        ４　リストから消したい場合は、削除ボタンから削除</p>
+                </div>
+                <form v-on:submit.prevent>
+
+                    <input type="text" v-model="newItem">
+                    <button class="btn btn-light btn-sm btn_form" v-on:click="addItem">
+                        追加する
+                    </button>
+
+                </form>
+                <ul class="todo">
+                    <li class="todo" v-for="(todo, index) in todos">
+                        <input type="checkbox" v-model="todo.isDone">
+                        <span v-bind:class="{ done: todo.isDone}">{{ todo.item }}</span>
+                        <button class="btn btn-light btn-sm" v-on:click="deleteItem(index)">削除</button>
+                    </li>
+                </ul>
+                <!-- <div class="card mx-auto h-30 debag" style="width: 18rem;"> -->
+                <!-- <pre>デバッグ用モニタ <br>{{$data}}</pre> -->
+                <!-- </div> -->
+            </div>
+
+            <!--以下フッター------------------------------------------------>
+
+            <footer>
+                <ul class="sns">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"
+                                　alt="Facebook"></a>
+                    </li>
+                    <li><a href="#" target="_blank"><img src="images/twitter2.png" alt="Twitter"></a>
+                    </li>
+                </ul>
+                <p class="footer_copyright">
+                    &COPY; 2020 My portfolio
+                </p>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+            <script src="js/main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
