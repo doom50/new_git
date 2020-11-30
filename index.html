@@ -18,39 +18,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <div class="container top">
-            <h1>My Portfolio</h1>
-            <p><img src="images/3a8e048c.jpg" alt="main_images" class="img-fluid">
-            </p>
+    <div class="container-fluid top">
+        <h1>My Portfolio</h1>
+        <p><img src="images/3a8e048c.jpg" alt="main_images" class="img-fluid w-100">
+        </p>
 
-        </div>
+    </div>
+
+    <div class="container sticky-top">
         <header>
-
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="contact.html">PROFILE</a></li>
-                <li><a href="works.html">WORKS</a></li>
-            </ul>
+            <div class="row sticky-top">
+                <div class="col glo"><p><a href="index.html">HOME</a></p></div>
+                <div class="col glo"><p><a href="contact.html">PROFILE</a></p></div>
+                <div class="col glo"><p><a href="works.html">WORKS</a></p></div>
+            </div>
         </header>
+    </div>
+
+    <main>
         <div class="container">
             <main class="about">
                 <h2 class="title">ABOUT</h2>
                 <hr class="divider">
-                    <p class="text-justify">　このページは、ポートフォリオとして作成したものです。<br>
-                        　簡単ではありますが、BOOTSTRAP４を活用して作成しています。<br>
-                        　また、Vue.jsを使用して簡単なTODOアプリをWORKSのページに実装しております。<br>
-                        　今後はPHPの勉強を行いデータベースを活用したアプリを実装予定です。
-                    </p>
-            </main>
+                <p class="text-justify">　このページは、ポートフォリオとして作成したものです。<br>
+                    　簡単ではありますが、BOOTSTRAP４を活用して作成しています。<br>
+                    　また、Vue.jsを使用して簡単なTODOアプリをWORKSのページに実装しております。<br>
+                    　今後はPHPの勉強を行いデータベースを活用したアプリを実装予定です。
+                </p>
         </div>
-    </div>
+    </main>
     <footer>
         <ul class="sns">
             <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
