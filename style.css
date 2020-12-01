@@ -66,11 +66,6 @@ header {
   margin: 0;
 
 }
-
-.kotei{
-
-}
-
 .glo {
   text-align: center;
   letter-spacing: 0.3em;
@@ -170,7 +165,7 @@ main p {
   text-align: center;
   font-weight: lighter;
   font-size: smaller;
-  margin: 5px 10px;
+  margin: 5px 1px;
   /* width: 40  0px; */
   display: inline-block;
 }
@@ -308,21 +303,29 @@ main p {
   margin-bottom: 20px;
 }
 
-.calum{
- width: 100%;
- text-align: justify;
- margin:50px;
-}
 
 .o-3column {
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.hobby_a a:link {
+a {
   color: #151313;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
+
+.favorit {
+  text-align: center;
 }
  
+.fav_text {
+  text-align: justify;
+  margin-top: 5px;
+}
+
+.fav_contents {
+  margin-top: 18px;
+}
+
