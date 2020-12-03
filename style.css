@@ -269,7 +269,7 @@ main p {
   letter-spacing: 0.2em;
   font-family: helvetica;
   font-weight: normal;
-  font-size: 9px;
+  /* font-size: 9px; */
 }
 
 .btn_form {
@@ -307,7 +307,7 @@ main p {
 .hob p {
   font-family: helvetica;
   font-weight: lighter;
-  font-size: 1.1em;
+  font-size: 1.5em;
   text-align: left;
   width: 80%;
 }
