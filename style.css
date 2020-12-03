@@ -14,7 +14,7 @@ body {
 .top {
   margin: 0;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   position: -webkit-sticky;
   position: sticky;
 }
@@ -28,8 +28,25 @@ h1 {
   letter-spacing: 0.2em;
   color: #151313;
   text-align: center;
-  font-size: 30px;
-  line-height: 3em;
+  font-size: 55px;
+  line-height: 4em;
+}
+
+h3 {
+  font-family: "Noto Sans JP", serif;
+  letter-spacing: 0.2em;
+  color: #151313;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mainfont {
+  font-size: medium;
+}
+
+.maintext {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 p a:link,
@@ -72,8 +89,14 @@ header {
   padding: 8px;
   position: sticky;
   top: 0;
-  background-color: #ffffff;
+  background-color: #f4f6fa;
 }
+
+.navbar{
+
+
+}
+
 header p img {
   width: 100vw;
   height: auto;
@@ -151,7 +174,7 @@ main {
   height: 1500px;
 }
 main h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   letter-spacing: 0.2em;
   color: rgb(29, 28, 28);
   text-align: center;
@@ -164,23 +187,24 @@ main p {
   color: rgb(29, 28, 28);
   text-align: center;
   font-weight: lighter;
-  font-size: smaller;
+  font-size: normal ;
   margin: 5px 1px;
   /* width: 40  0px; */
   display: inline-block;
 }
 .about {
-  display: inline-block;
+  font-family: helvetica;
+  text-align: center;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: helvetica;
   font-weight: normal;
   font-size: 11px;
   letter-spacing: 0.2em;
-  text-align: center;
-  height: 200px;
-  margin-top: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
@@ -227,13 +251,7 @@ main p {
   font-family: "Merriweather", serif;
 }
 
-.about {
-  font-family: helvetica;
-  font-weight: normal;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  font-size: 9px;
-}
+
 
 #app li > span.done {
   text-decoration: line-through;
@@ -319,7 +337,7 @@ a {
 .favorit {
   text-align: center;
 }
- 
+
 .fav_text {
   text-align: justify;
   margin-top: 5px;
@@ -328,4 +346,3 @@ a {
 .fav_contents {
   margin-top: 18px;
 }
-
