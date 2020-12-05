@@ -39,6 +39,20 @@ h3 {
   margin-top: 40px;
 }
 
+.about-wrap {
+  background-color: rgba(49, 178, 238, 0.13);
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.about-wrap2 {
+  background-color: rgba(216, 31, 201, 0.075);
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
 .maintext {
   margin-top: 5px;
   margin-bottom: 30px;
@@ -193,7 +207,7 @@ main h2 {
   letter-spacing: 0.2em;
   color: #1d1c1c;
   text-align: center;
-  margin: 80px 0 15px;
+  margin: 10px 0 15px;
 }
 
 main p {
@@ -212,8 +226,8 @@ main p {
   font-family: helvetica;
   text-align: center;
   height: auto;
-  margin-top: 120px;
-  margin-bottom: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -234,7 +248,7 @@ main p {
   letter-spacing: 0.2em;
   color: #151313;
   text-align: center;
-  background-color: white;
+  background-color: opacity(0);
 }
 
 .divider {
@@ -349,8 +363,8 @@ a {
 
 .favorit {
   text-align: center;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .fav_text {
