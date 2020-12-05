@@ -4,7 +4,8 @@ html {
 
 body {
   color: rgb(7, 3, 27);
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo,
+    sans-serif;
   font-size: 1.4rem;
   line-height: 1.6;
   margin: 0;
@@ -39,17 +40,20 @@ h3 {
   margin-top: 40px;
 }
 
-
-
 .maintext {
-  margin-top: 30px;
+  margin-top: 5px;
   margin-bottom: 30px;
   font-size: medium;
   width: 70%;
+  &.skiltext {
+    font-size: 1.2em;
+    width: max-content;
+  }
 }
 
 p a {
-  &:link, &:visited {
+  &:link,
+  &:visited {
     color: #151313;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
@@ -91,7 +95,6 @@ header {
   top: 0;
   background-color: white;
 }
-
 
 header p img {
   width: 100vw;
@@ -343,4 +346,17 @@ a {
 
 .fav_contents {
   margin-top: 50px;
+}
+
+h6 {
+  font-size: 1.4em;
+  margin-bottom: 2px;
+}
+
+.marktext_01 {
+  background: linear-gradient(transparent 80%, #118cf157 50%);
+}
+
+.marktext_02 {
+  background: linear-gradient(transparent 80%, #f1119465 50%);
 }

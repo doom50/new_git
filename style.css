@@ -40,10 +40,17 @@ h3 {
 }
 
 .maintext {
-  margin-top: 30px;
+  margin-top: 5px;
   margin-bottom: 30px;
   font-size: medium;
   width: 70%;
+}
+
+.maintext.skiltext {
+  font-size: 1.2em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 p a {
@@ -353,5 +360,20 @@ a {
 
 .fav_contents {
   margin-top: 50px;
+}
+
+h6 {
+  font-size: 1.4em;
+  margin-bottom: 2px;
+}
+
+.marktext_01 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(50%, #118cf157));
+  background: linear-gradient(transparent 80%, #118cf157 50%);
+}
+
+.marktext_02 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(50%, #f1119465));
+  background: linear-gradient(transparent 80%, #f1119465 50%);
 }
 /*# sourceMappingURL=style.css.map */
