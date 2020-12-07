@@ -59,7 +59,7 @@ h3 {
 .maintext {
   margin-top: 5px;
   margin-bottom: 30px;
-  font-size: medium;
+  font-size: smaller;
   width: 70%;
 }
 
@@ -152,7 +152,7 @@ li {
   padding-bottom: 5px;
   width: 100%;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 0.5rem;
 }
 
 .todo ul {
@@ -223,7 +223,7 @@ main p {
   color: #1d1c1c;
   text-align: center;
   font-weight: lighter;
-  font-size: normal;
+  font-size: smaller;
   margin: 5px 5px;
   /* width: 40  0px; */
   display: inline-block;
@@ -240,7 +240,7 @@ main p {
   margin-right: auto;
   font-family: helvetica;
   font-weight: normal;
-  font-size: 11px;
+  font-size: 7px;
   letter-spacing: 0.2em;
 }
 
@@ -250,7 +250,7 @@ main p {
   margin: 0;
   margin-bottom: 8px;
   line-height: 150%;
-  font-size: 30px;
+  font-size: 15px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.2em;
   color: #151313;
@@ -329,7 +329,7 @@ main p {
 .hob {
   display: inline-block;
   font-weight: normal;
-  font-size: 11px;
+  font-size: 5px;
   letter-spacing: 0.2em;
   text-align: center;
   height: auto;
@@ -342,7 +342,7 @@ main p {
 .hob p {
   font-family: helvetica;
   font-weight: lighter;
-  font-size: 1.5em;
+  font-size: 0.8em;
   text-align: left;
   width: 80%;
 }
@@ -444,15 +444,4 @@ img {
     bottom: 10px;
   }
 }
-
-@media (min-width: 601px) {
-  h1 {
-    font-family: "Josefin Slab", serif;
-    letter-spacing: 0.2em;
-    color: #151313;
-    text-align: center;
-    font-size: 55px;
-    line-height: 4em;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=mobile.css.map */

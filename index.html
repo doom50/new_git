@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <title>My Portfolio</title>
+
     <meta name="descriotion" contents="This is my portfolio">
+    <!-- ファビコン読み込み -->
     <link rel="icon" href="images/読書のアイコン.png">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
@@ -29,6 +35,7 @@
 </head>
 
 <body>
+
     <div class="container-fluid top">
         <h1>My Portfolio</h1>
         <img src="images/3a8e048c.jpg" alt="main_images" class="img-fluid w-100">
@@ -60,10 +67,11 @@
                     <h2 class="title">ABOUT</h2>
                     <hr class="divider">
                     <p class="text-justify maintext">
-                        このページは、ポートフォリオとして作成したものです。<br>
-                        効率化のためBootstrap4・Sassを活用して作成しています。<br>
-                        また、Vue.jsを使用した簡単なTODOアプリをWORKSのページに実装しております。<br>
-                        今後はPHPの勉強を行いデータベースを活用したアプリを実装予定です。
+                        　このページは、私のことを少しでも知っていただくための、ポートフォリオページです。<br>
+                        　シンプルかつレスポンシブル、視認性の高いものを目指して作成しました。<br><br>
+                        　未経験者のため、作業を効率化するべく、Bootstrap4・Sassを活用し作成しています。<br>
+                        　また、Vue.jsを使用した簡単なTODOアプリをWORKSのページに実装しております。<br><br>
+                        　今後はPHP等のバックエンドの知識も学習し、データベースを活用したアプリを実装予定しております。
                     </p>
                 </div>
             </div>
@@ -166,6 +174,39 @@
                 </div>
             </div>
         </div>
+        <div class=" about-wrap2">
+            <div class="container w-75 favorit">
+                <h2>すきな風景</h2>
+                <hr class="divider">
+                <p class="text-justify mainfont maintext">
+                    好きなもののイメージをお伝えするため、Javascriptライブラリを使用したスライドを作成しました。<br>
+                    スライダープラグイン Swiper を利用して作成しています。
+                </p>
+            </div>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/FH000005.jpg" alt="" class="img-responsive"></div>
+                <div class="swiper-slide"><img src="images/FH000025.jpg" alt="" class="img-responsive"></div>
+                <div class="swiper-slide"><img src="images/FH000003.jpg" alt="" class="img-responsive"></div>
+                <div class="swiper-slide"><img src="images/IMG_0054.jpg" alt="" class="img-responsive"></div>
+                <div class="swiper-slide"><img src="images/FH000019.jpg" alt="" class="img-responsive"></div>
+
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
     </main>
     <footer>
         <ul class="sns">
@@ -191,6 +232,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/mainslider.js"></script>
 </body>
 
 </html>

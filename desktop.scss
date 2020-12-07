@@ -1,0 +1,101 @@
+h1 {
+    font-family: "Josefin Slab", serif;
+    letter-spacing: 0.2em;
+    color: #151313;
+    text-align: center;
+    font-size: 55px;
+    line-height: 4em;
+  }
+
+  .maintext {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: medium;
+    width: 70%;
+    &.skiltext {
+      font-size: 1.2em;
+      width: max-content;
+    }
+  }
+
+  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  main {
+    height: auto;
+
+    h2 {
+      font-family: "Noto Sans JP", sans-serif;
+      letter-spacing: 0.2em;
+      color: rgb(29, 28, 28);
+      text-align: center;
+      margin: 10px 0 15px;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 0.2em;
+      color: rgb(29, 28, 28);
+      text-align: center;
+      font-weight: lighter;
+      font-size: normal;
+      margin: 5px 5px;
+
+      /* width: 40  0px; */
+      display: inline-block;
+    }
+  }
+
+  .about {
+    font-family: helvetica;
+    text-align: center;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: helvetica;
+    font-weight: normal;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+  }
+
+  .title {
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    margin-bottom: 8px;
+    line-height: 150%;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.2em;
+    color: #151313;
+    text-align: center;
+    background-color: opacity($color: 0);
+  }
+
+  .hob {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    height: auto;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+        font-family: helvetica;
+        font-weight: lighter;
+        font-size: 1.5em;
+        text-align: left;
+        width: 80%;
+      }
