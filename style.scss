@@ -47,8 +47,14 @@ h3 {
   padding-bottom: 60px;
 }
 
+.profiel-wrap {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
 .about-wrap2 {
-  background-color: rgba(216, 31, 201, 0.075);
+  background-color: rgba(31, 194, 216, 0.075);
   width: 100%;
   padding-top: 20px;
   padding-bottom: 60px;
@@ -103,11 +109,16 @@ header {
 .glo {
   text-align: center;
   letter-spacing: 0.3em;
-  padding: 8px;
+  padding: 1px;
   position: sticky;
   top: 0;
   background-color: white;
+  p {
+    margin-top: .8rem;
+  }
 }
+
+
 
 header p img {
   width: 100vw;
@@ -146,6 +157,7 @@ li {
   list-style-type: disc;
   display: block !important;
 }
+
 
 .prof_img {
   max-width: 25%;
