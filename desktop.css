@@ -69,16 +69,27 @@ main p {
 }
 
 .title {
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  margin: 0;
-  margin-bottom: 8px;
-  line-height: 150%;
   font-size: 30px;
-  font-family: "Montserrat", sans-serif;
+}
+
+.hob {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 11px;
   letter-spacing: 0.2em;
-  color: #151313;
   text-align: center;
-  background-color: opacity(0);
+  height: auto;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hob p {
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 1.5em;
+  text-align: left;
+  width: 80%;
 }
 /*# sourceMappingURL=desktop.css.map */

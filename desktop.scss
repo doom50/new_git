@@ -67,17 +67,7 @@ h1 {
   }
 
   .title {
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-    margin: 0;
-    margin-bottom: 8px;
-    line-height: 150%;
     font-size: 30px;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.2em;
-    color: #151313;
-    text-align: center;
-    background-color: opacity($color: 0);
   }
 
   .hob {
@@ -99,3 +89,4 @@ h1 {
         text-align: left;
         width: 80%;
       }
+    }
