@@ -5,7 +5,6 @@ html {
 body {
   color: #07031b;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
-  font-size: 1.4rem;
   line-height: 1.6;
   margin: 0;
 }
@@ -65,9 +64,6 @@ h3 {
 
 .maintext.skiltext {
   font-size: 1.2em;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 p a {
@@ -80,7 +76,7 @@ p a:link, p a:visited {
   color: #151313;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8em;
+  font-size: 1.1em;
 }
 
 p a::after {
@@ -104,6 +100,10 @@ p a::after {
 p a:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+}
+
+#workslink {
+  text-decoration: none;
 }
 
 header {
@@ -155,6 +155,10 @@ main p {
   display: inline-block;
 }
 
+.movieEx {
+  text-align: left;
+}
+
 .about {
   font-family: helvetica;
   text-align: center;
@@ -191,6 +195,12 @@ main p {
   width: 200px;
 }
 
+hr .divider2 {
+  border: none;
+  border-top: 1px solid #242a2c;
+  margin-bottom: 2px;
+}
+
 .works_container {
   height: 150px;
 }
@@ -224,7 +234,7 @@ main p {
 
 .dips {
   text-align: left;
-  padding: 0 50px 30px;
+  padding: 0 50px 0px;
   max-width: 640px;
   margin: auto;
   letter-spacing: 0.2em;
@@ -271,6 +281,10 @@ main p {
   font-size: 0.8em;
   text-align: left;
   width: 80%;
+}
+
+p .movieEx {
+  text-align: left;
 }
 
 .hob_title {
@@ -401,11 +415,11 @@ li {
 
 .swiper-container {
   width: 100%;
-  height: 600px;
+  height: 700px;
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .swiper-button-prev,
@@ -420,7 +434,7 @@ img {
   z-index: 10000;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .swiper-slide {
     padding: 50px;
   }
@@ -444,6 +458,10 @@ img {
   .sample02 .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 10px;
   }
+}
+
+.twpjURL {
+  width: 50vh;
 }
 
 @media (min-width: 601px) {

@@ -230,7 +230,7 @@ hr .divider2 {
 
 .dips {
   text-align: left;
-  padding: 0 50px 30px;
+  padding: 0 50px 0px;
   max-width: 640px;
   margin: auto;
   letter-spacing: 0.2em;
@@ -452,4 +452,8 @@ img {
   .sample02 .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 10px;
   }
+}
+
+.twpjURL {
+  width: 50vh;
 }
