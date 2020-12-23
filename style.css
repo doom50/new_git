@@ -7,6 +7,32 @@ body {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
   line-height: 1.6;
   margin: 0;
+  font-size: 1.2em;
+}
+
+main {
+  height: auto;
+}
+
+main h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.2em;
+  color: #1d1c1c;
+  text-align: center;
+  margin: 10px 0 15px;
+  font-size: 20px;
+}
+
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2em;
+  color: #1d1c1c;
+  text-align: center;
+  font-weight: lighter;
+  font-size: normal;
+  margin: 5px 5px;
+  /* width: 40  0px; */
+  display: inline-block;
 }
 
 .top {
@@ -44,6 +70,19 @@ h3 {
   padding-bottom: 60px;
 }
 
+.new_text {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: medium;
+  width: 70%;
+  text-align: center;
+}
+
+.new {
+  font-family: helvetica;
+  text-align: center;
+}
+
 .profiel-wrap {
   width: 100%;
   padding-top: 20px;
@@ -58,7 +97,7 @@ h3 {
 .maintext {
   margin-top: 5px;
   margin-bottom: 30px;
-  font-size: smaller;
+  font-size: normal;
   width: 70%;
 }
 
@@ -128,31 +167,6 @@ header {
 header p img {
   width: 100vw;
   height: auto;
-}
-
-main {
-  height: auto;
-}
-
-main h2 {
-  font-family: "Noto Sans JP", sans-serif;
-  letter-spacing: 0.2em;
-  color: #1d1c1c;
-  text-align: center;
-  margin: 10px 0 15px;
-  font-size: 20px;
-}
-
-main p {
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.2em;
-  color: #1d1c1c;
-  text-align: center;
-  font-weight: lighter;
-  font-size: smaller;
-  margin: 5px 5px;
-  /* width: 40  0px; */
-  display: inline-block;
 }
 
 .movieEx {
@@ -485,6 +499,13 @@ img {
     width: -moz-max-content;
     width: max-content;
   }
+  .new_text {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: normal;
+    width: 80%;
+    text-align: justify;
+  }
   li {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -507,7 +528,7 @@ img {
     letter-spacing: 0.2em;
     color: #1d1c1c;
     text-align: center;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: normal;
     margin: 5px 5px;
     /* width: 40  0px; */
@@ -525,6 +546,13 @@ img {
     font-family: helvetica;
     font-weight: normal;
     font-size: 11px;
+    letter-spacing: 0.2em;
+  }
+  .new {
+    font-family: helvetica;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1em;
     letter-spacing: 0.2em;
   }
   .title {

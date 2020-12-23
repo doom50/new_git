@@ -1,3 +1,7 @@
+.title {
+  font-size: 30px;
+}
+
 h1 {
     font-family: "Josefin Slab", serif;
     letter-spacing: 0.2em;
@@ -16,6 +20,33 @@ h1 {
       font-size: 1.2em;
       width: max-content;
     }
+  }
+
+  .new {
+    font-family: helvetica;
+    text-align: justify;
+    //position: absolute;
+    //height: auto;
+    //margin-top: 10px;
+    //margin-bottom: 10px;
+    //display: block;
+    //margin-left: auto;
+    //margin-right: auto;
+    font-weight: normal;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    position: absolute;
+  }
+
+  .new_text {
+    position: relative;
+    font-size: normal;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
 
   li {
@@ -42,7 +73,7 @@ h1 {
       letter-spacing: 0.2em;
       color: rgb(29, 28, 28);
       text-align: center;
-      font-weight: lighter;
+      font-weight: normal;
       font-size: normal;
       margin: 5px 5px;
 
@@ -66,9 +97,7 @@ h1 {
     letter-spacing: 0.2em;
   }
 
-  .title {
-    font-size: 30px;
-  }
+
 
   .hob {
     display: inline-block;

@@ -9,8 +9,33 @@ body {
 
   line-height: 1.6;
   margin: 0;
+  font-size: 1.2em;
 }
+main {
+  height: auto;
 
+  h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    letter-spacing: 0.2em;
+    color: rgb(29, 28, 28);
+    text-align: center;
+    margin: 10px 0 15px;
+    font-size: 20px;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    color: rgb(29, 28, 28);
+    text-align: center;
+    font-weight: lighter;
+    font-size: normal;
+    margin: 5px 5px;
+
+    /* width: 40  0px; */
+    display: inline-block;
+  }
+}
 .top {
   margin: 0;
   padding: 0;
@@ -47,6 +72,26 @@ h3 {
   padding-bottom: 60px;
 }
 
+.new {
+  font-family: helvetica;
+  //text-align: center;
+  position: absolute;
+}
+.new_text {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-right: 0px;
+  font-size: medium;
+  width: 70%;
+  //text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .profiel-wrap {
   width: 100%;
   padding-top: 20px;
@@ -62,7 +107,7 @@ h3 {
 .maintext {
   margin-top: 5px;
   margin-bottom: 30px;
-  font-size: smaller;
+  font-size: normal;
   width: 70%;
   &.skiltext {
     font-size: 1.2em;
@@ -70,7 +115,7 @@ h3 {
   }
 }
 
-p a {
+p a .glo {
   &:link,
   &:visited {
     color: #151313;
@@ -124,34 +169,6 @@ header {
 header p img {
   width: 100vw;
   height: auto;
-}
-
-main {
-  height: auto;
-
-  h2 {
-    font-family: "Noto Sans JP", sans-serif;
-    letter-spacing: 0.2em;
-    color: rgb(29, 28, 28);
-    text-align: center;
-    margin: 10px 0 15px;
-    font-size: 20px;
-  }
-
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.2em;
-    color: rgb(29, 28, 28);
-    text-align: center;
-    font-weight: lighter;
-    font-size: smaller;
-    margin: 5px 5px;
-
-    /* width: 40  0px; */
-    display: inline-block;
-
-
-  }
 }
 
 .movieEx {
@@ -277,8 +294,6 @@ hr .divider2 {
     font-size: 0.8em;
     text-align: left;
     width: 80%;
-
-
   }
 }
 
@@ -424,7 +439,7 @@ img {
   z-index: 10000;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .swiper-slide {
     padding: 50px;
   }
@@ -439,8 +454,8 @@ img {
   }
 }
 
-@media (min-width: 768px) {
-  .sample02 .swiper-slide {
+@media (min-width: 601px) {
+
     padding: 50px;
   }
 
@@ -452,8 +467,12 @@ img {
   .sample02 .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 10px;
   }
-}
+
 
 .twpjURL {
   width: 50vh;
 }
+
+//.site_link {
+
+//}

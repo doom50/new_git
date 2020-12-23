@@ -7,6 +7,32 @@ body {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
   line-height: 1.6;
   margin: 0;
+  font-size: 1.2em;
+}
+
+main {
+  height: auto;
+}
+
+main h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.2em;
+  color: #1d1c1c;
+  text-align: center;
+  margin: 10px 0 15px;
+  font-size: 20px;
+}
+
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2em;
+  color: #1d1c1c;
+  text-align: center;
+  font-weight: lighter;
+  font-size: normal;
+  margin: 5px 5px;
+  /* width: 40  0px; */
+  display: inline-block;
 }
 
 .top {
@@ -44,6 +70,25 @@ h3 {
   padding-bottom: 60px;
 }
 
+.new {
+  font-family: helvetica;
+  position: absolute;
+}
+
+.new_text {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-right: 0px;
+  font-size: medium;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 .profiel-wrap {
   width: 100%;
   padding-top: 20px;
@@ -58,7 +103,7 @@ h3 {
 .maintext {
   margin-top: 5px;
   margin-bottom: 30px;
-  font-size: smaller;
+  font-size: normal;
   width: 70%;
 }
 
@@ -66,20 +111,20 @@ h3 {
   font-size: 1.2em;
 }
 
-p a {
+p a .glo {
   position: relative;
   display: inline-block;
   text-decoration: none;
 }
 
-p a:link, p a:visited {
+p a .glo:link, p a .glo:visited {
   color: #151313;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
 }
 
-p a::after {
+p a .glo::after {
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -97,7 +142,7 @@ p a::after {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-p a:hover::after {
+p a .glo:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
@@ -128,31 +173,6 @@ header {
 header p img {
   width: 100vw;
   height: auto;
-}
-
-main {
-  height: auto;
-}
-
-main h2 {
-  font-family: "Noto Sans JP", sans-serif;
-  letter-spacing: 0.2em;
-  color: #1d1c1c;
-  text-align: center;
-  margin: 10px 0 15px;
-  font-size: 20px;
-}
-
-main p {
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.2em;
-  color: #1d1c1c;
-  text-align: center;
-  font-weight: lighter;
-  font-size: smaller;
-  margin: 5px 5px;
-  /* width: 40  0px; */
-  display: inline-block;
 }
 
 .movieEx {
@@ -434,7 +454,7 @@ img {
   z-index: 10000;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .swiper-slide {
     padding: 50px;
   }
@@ -447,17 +467,17 @@ img {
   }
 }
 
-@media (min-width: 768px) {
-  .sample02 .swiper-slide {
-    padding: 50px;
-  }
-  .sample02 .swiper-button-prev,
-  .sample02 .swiper-button-next {
-    display: block;
-  }
-  .sample02 .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: 10px;
-  }
+@media (min-width: 601px) {
+  padding: 50px;
+}
+
+.sample02 .swiper-button-prev,
+.sample02 .swiper-button-next {
+  display: block;
+}
+
+.sample02 .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 10px;
 }
 
 .twpjURL {
