@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
     <title>My Portfolio</title>
-
     <meta name="descriotion" contents="This is my portfolio">
     <!-- ファビコン読み込み -->
     <link rel="icon" href="images/読書のアイコン.png">
@@ -31,18 +29,14 @@
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/2e4356de26.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
     <div class="container-fluid top">
         <h1>My Portfolio</h1>
         <img src="images/3a8e048c.jpg" alt="main_images" class="img-fluid w-100">
-
-
     </div>
-
     <div class="container-fluid top sticky-top">
         <header>
             <div class="row sticky-top">
@@ -55,30 +49,36 @@
                 <div class="col glo">
                     <p><a href="works.html">WORKS</a></p>
                 </div>
+                <!--<div class="col glo">
+                    <i class="fal fa-bars"></i>
+                </div>-->
             </div>
         </header>
     </div>
 
     <main>
-        <div class=" about-wrap">
+        <div class="about-wrap">
             <div class="container w-75">
-
-                <div class="new">
+                <div class="about">
                     <h2 class="title">NEW</h2>
                     <hr class="divider">
-                    <div class="new_text">
-                        <span class="badge badge-dark">New</span>　　　<span class="marktext_02">新しい習作webページを作成</span>しました。<br>
-                        New WEB　Site　　→
-                        <a href="https://elastic-chandrasekhar-278d76.netlify.app/index.html" class="text-dark" >LET'S　GET　IN　TAIWAN</a>
-                        <br>
-                        <span class="marktext_02">ITパスポート試験に合格</span>しました。　785点/1000点（合格600点）<br>
-                    <div>
+                    <div class="neu">
+                        <p class="new_text">
+                            <span class="badge badge-dark">New</span>　　　<span
+                                class="marktext_02">新しい習作webページを作成</span>しました。<br><br>
+                            New WEB　Site　　→
+                            <a href="https://elastic-chandrasekhar-278d76.netlify.app/index.html"
+                                class="text-dark">LET'S　GET　IN　TAIWAN</a>
+                            <br><br><br>
+                            <span class="badge badge-dark">New</span>　　　<span
+                                class="marktext_02">ITパスポート試験に合格</span>しました。　785点/1000点（合格600点）<br>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class=" about-wrap">
+        <div class="about-wrap">
             <div class="container w-75">
-
                 <div class="about">
                     <h2 class="title">ABOUT</h2>
                     <hr class="divider">
@@ -93,13 +93,15 @@
             </div>
         </div>
         <div class="profiel-wrap">
-            <div class="container">
-                <h2 class="title">PROFILE</h2>
-                <hr class="divider">
-                <div class="prof">
-                    <p class="img_width"><img src="images/prof.png" alt="" class="prof_img"></p>
-                    <br clear="all">
-                    <p>名前：名久井 一寿<br>生年月日：1987年2月<br>出身：栃木県</p>
+            <div class="container w-75">
+                <div class="about">
+                    <h2 class="title">PROFILE</h2>
+                    <hr class="divider">
+                    <div class="prof">
+                        <p class="img_width"><img src="images/prof.png" alt="" class="prof_img"></p>
+                        <br clear="all">
+                        <p>名前：名久井 一寿<br>生年月日：1987年2月<br>出身：栃木県</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,7 +111,8 @@
                 <p class="text-justify maintext">
                     　好奇心旺盛で、新しいモノ・コトについて積極的にアプローチする姿勢があります。<br>
                     　学ぶことが好きで、一級建築士試験についても筆記試験を独学で合格しました。また、興味があるドイツ語を学んだり、行動経済学・地政学なども独学で学んでいます。<br>
-                    <br></p>
+                    <br>
+                </p>
             </div>
         </div>
         <div class="container w-75">
@@ -148,14 +151,23 @@
                 <h6>【利用可能スキル】</h6>
                 <p class="text-justify maintext skiltext">
                     MS Word/Excel/PowerPoint<br>
-                    Adobe  PhotoShop/ Illustrator <br>
+                    Adobe PhotoShop/ Illustrator <br>
                 </p>
                 <h6>【学習中の言語】</h6>
+
                 <p class="text-justify maintext skiltext">
-                    HTML5/CSS3/Sass(Scss)<br>
-                    JavaScript Vue.js<br>
-                    PHP MySQL<br>
+                <div class="skill-wrapper">
+                    <div class="row justify-content-center">
+                        <div class="skillLogo col-lg-auto col-md-5"><i class="fab fa-html5 fa-9x html_green"></i><br> HTML5</div>
+                        <div class="skillLogo col-lg-auto col-md-5"><i class="fab fa-css3-alt fa-9x css_pink"></i><br>CSS3</div>
+                        <div class="skillLogo col-lg-auto col-md-5"><i class="fab fa-js-square fa-9x js_blue"></i><br>JavaScript</div>
+                        <div class="skillLogo col-lg-auto col-md-5"><i class="fab fa-vuejs fa-9x vue_green"></i><br>Vue.js</div>
+                        <div class="skillLogo col-lg-auto col-md-5"><i class="fab fa-bootstrap fa-9x bs_purpul"></i><br>Bootstrap4</div>
+                    </div>
+                </div>
                 </p>
+            </div>
+            <div class="skill-wrapper">
                 <h6>【開発環境】</h6>
                 <p class="text-justify maintext skiltext">
                     エディタ：Visual Studio Code <br>
@@ -163,10 +175,12 @@
                 <br>
                 <h6>【学習準備・導入中】</h6>
                 <p class="text-justify maintext
-                skiltext">
+                    skiltext">
                     タスクランナー　Gulp/Webpack
                 </p>
+
             </div>
+        </div>
         </div>
         <div class=" about-wrap2">
             <div class="container w-75 favorit">
@@ -176,9 +190,7 @@
                     <div class="row o-3column">
                         <div class="col-sm-3 col-6 fav_contents"><a href="index.html" class="hobby_a">MOVIES</a>
                             <p class="fav_text">　ドラマやロードムービ、ゾンビものが好きです。<br>
-                            　年間100本ほどみています。</p>
-
-
+                                　年間100本ほどみています。</p>
                         </div>
                         <div class="col-sm-3 col-6 fav_contents"><a href="contact.html">MUSIC</a>
                             <p class="fav_text">　ここ数年アナログ盤にはまっています。温かみのある音でとても良いです。</p>
@@ -197,7 +209,7 @@
             <div class="container w-75 favorit">
                 <h2>すきな風景</h2>
                 <hr class="divider">
-                <p class="text-justify mainfont maintext">
+                <p class="text-justify">
                     好きなもののイメージをお伝えするため、Javascriptライブラリを使用したスライドを作成しました。<br>
                     スライダープラグイン Swiper を利用して作成しています。
                 </p>
@@ -214,16 +226,13 @@
                 <div class="swiper-slide"><img src="images/IMG_0054.jpg" alt="" class="img-responsive"></div>
                 <div class="swiper-slide"><img src="images/FH000019.jpg" alt="" class="img-responsive"></div>
                 <div class="swiper-slide"><img src="images/FH000024.jpg" alt="" class="img-responsive"></div>
-
                 ...
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
-
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>

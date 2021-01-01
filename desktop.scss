@@ -3,119 +3,132 @@
 }
 
 h1 {
-    font-family: "Josefin Slab", serif;
+  font-family: "Josefin Slab", serif;
+  letter-spacing: 0.2em;
+  color: #151313;
+  text-align: center;
+  font-size: 55px;
+  line-height: 4em;
+}
+
+.new_text {
+  font-size: normal;
+  ////position: absolute;
+  //margin-top: 100px;
+  width: 100%;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//  -webkit-transform: translate(-50%, -50%);
+//  -ms-transform: translate(-50%, -50%);
+//}
+
+.maintext {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: medium;
+  width: 70%;
+  &.skiltext {
+    font-size: 1.2em;
+    width: max-content;
+    padding: 0 10px 0;
+  }
+}
+
+.new {
+  text-align: center;
+  margin-top: 100px;
+  display: block;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  position: relative;
+}
+
+
+
+li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+main {
+  height: auto;
+
+  h2 {
+    font-family: "Noto Sans JP", sans-serif;
     letter-spacing: 0.2em;
-    color: #151313;
+    color: rgb(29, 28, 28);
     text-align: center;
-    font-size: 55px;
-    line-height: 4em;
+    margin: 10px 0 15px;
   }
 
-  .maintext {
-    margin-top: 5px;
-    margin-bottom: 30px;
-    font-size: medium;
-    width: 70%;
-    &.skiltext {
-      font-size: 1.2em;
-      width: max-content;
-    }
-  }
-
-  .new {
-    font-family: helvetica;
-    text-align: justify;
-    //position: absolute;
-    //height: auto;
-    //margin-top: 10px;
-    //margin-bottom: 10px;
-    //display: block;
-    //margin-left: auto;
-    //margin-right: auto;
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    color: rgb(29, 28, 28);
+    text-align: center;
     font-weight: normal;
-    font-size: 1em;
-    letter-spacing: 0.2em;
-    position: absolute;
-  }
+    font-size: 1.3em;
+    margin: 5px 5px;
 
-  .new_text {
-    position: relative;
-    font-size: normal;
-    width: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-
-  li {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 100%;
-    text-align: center;
-    font-size: 1.8rem;
-  }
-
-  main {
-    height: auto;
-
-    h2 {
-      font-family: "Noto Sans JP", sans-serif;
-      letter-spacing: 0.2em;
-      color: rgb(29, 28, 28);
-      text-align: center;
-      margin: 10px 0 15px;
-    }
-
-    p {
-      font-family: Arial, Helvetica, sans-serif;
-      letter-spacing: 0.2em;
-      color: rgb(29, 28, 28);
-      text-align: center;
-      font-weight: normal;
-      font-size: normal;
-      margin: 5px 5px;
-
-      /* width: 40  0px; */
-      display: inline-block;
-    }
-  }
-
-  .about {
-    font-family: helvetica;
-    text-align: center;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: helvetica;
-    font-weight: normal;
-    font-size: 11px;
-    letter-spacing: 0.2em;
-  }
-
-
-
-  .hob {
+    /* width: 40  0px; */
     display: inline-block;
-    font-weight: normal;
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    text-align: center;
-    height: auto;
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  }
+}
 
-    p {
-        font-family: helvetica;
-        font-weight: lighter;
-        font-size: 1.5em;
-        text-align: left;
-        width: 80%;
-      }
-    }
+.about {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+
+.hob {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  height: auto;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    font-family: helvetica;
+    font-weight: lighter;
+    font-size: 1.5em;
+    text-align: left;
+    width: 80%;
+  }
+}
+}
+
+.skill-wrapper {
+  //display: flex;
+  //justify-content: space-between;
+}
+
+
+
+.html_green {
+  color: rgb(229, 231, 99);
+}
+
+.css_pink {
+  color: rgb(255, 162, 250);
+}
+
+.js_blue{
+  color: rgb(126, 197, 255);
+}
+
+.vue_green {
+  color: rgb(109, 221, 119);
+}
+
+.bs_purpul {
+  color: rgb(130, 73, 204);
+}

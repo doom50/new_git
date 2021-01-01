@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 body {
@@ -21,6 +21,7 @@ main {
     text-align: center;
     margin: 10px 0 15px;
     font-size: 20px;
+    display: inline-block;
   }
 
   p {
@@ -28,13 +29,29 @@ main {
     letter-spacing: 0.2em;
     color: rgb(29, 28, 28);
     text-align: center;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: normal;
     margin: 5px 5px;
 
     /* width: 40  0px; */
     display: inline-block;
   }
+
+}
+
+.about {
+  font-family: helvetica;
+  text-align: center;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: helvetica;
+  font-weight: normal;
+  font-size: 1.3em;
+  letter-spacing: 0.2em;
 }
 .top {
   margin: 0;
@@ -66,7 +83,7 @@ h3 {
 }
 
 .about-wrap {
-  // background-color: rgba(49, 178, 238, 0.13);
+   background-color: rgba(49, 178, 238, 0.13);
   width: 100%;
   padding-top: 20px;
   padding-bottom: 60px;
@@ -74,26 +91,27 @@ h3 {
 
 .new {
   font-family: helvetica;
-  //text-align: center;
-  position: absolute;
+  text-align: center;
+  display: inline-block;
+  height: 500px;
+  position: relative;
+
 }
+
+.neu {
+  position: relative;
+  font-size: normal;
+}
+
 .new_text {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  margin-right: 0px;
-  font-size: medium;
-  width: 70%;
-  //text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+//width: max-content;
+//position: absolute;
+top: 100px;
+left: 300px;
 }
 
 .profiel-wrap {
-  width: 100%;
+  max-width: 100%;
   padding-top: 20px;
   padding-bottom: 60px;
 }
@@ -105,13 +123,13 @@ h3 {
   // padding-bottom: 0px;
 }
 .maintext {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 30px;
   font-size: normal;
   width: 70%;
   &.skiltext {
     font-size: 1.2em;
-    // width: max-content;
+     width: max-content;
   }
 }
 
@@ -175,25 +193,14 @@ header p img {
   text-align: left;
 }
 
-.about {
-  font-family: helvetica;
-  text-align: center;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: helvetica;
-  font-weight: normal;
-  font-size: 7px;
-  letter-spacing: 0.2em;
+.text-dark {
+  font-size: small;
 }
 
 .title {
   font-weight: normal;
   text-rendering: optimizeLegibility;
-  margin: 0;
+  //margin: 0;
   margin-bottom: 8px;
   line-height: 150%;
   font-size: 15px;
@@ -291,7 +298,7 @@ hr .divider2 {
   p {
     font-family: helvetica;
     font-weight: lighter;
-    font-size: 0.8em;
+    font-size: 2.5em;
     text-align: left;
     width: 80%;
   }
@@ -319,7 +326,7 @@ a {
   color: #151313;
   text-decoration: none;
   font-family: sans-serif;
-  font-size: 1.1em;
+  font-size: 2em;
 }
 
 .favorit {
@@ -331,6 +338,7 @@ a {
 .fav_text {
   text-align: left;
   margin-top: 25px;
+  font-size: medium;
 }
 
 .fav_contents {
@@ -338,7 +346,7 @@ a {
 }
 
 h6 {
-  font-size: 1.4em;
+  font-size: 2em;
   margin-bottom: 2px;
 }
 
@@ -385,7 +393,7 @@ li {
 
 .prof_img {
   max-width: 25%;
-  margin: 15px 100px 12px;
+  margin: 15px 0px 12px;
 }
 
 .sns {
@@ -455,10 +463,6 @@ img {
 }
 
 @media (min-width: 601px) {
-
-    padding: 50px;
-  }
-
   .sample02 .swiper-button-prev,
   .sample02 .swiper-button-next {
     display: block;
@@ -467,10 +471,40 @@ img {
   .sample02 .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 10px;
   }
-
+}
 
 .twpjURL {
   width: 50vh;
+}
+
+.skill-wrapper {
+  //display: flex;
+  //justify-content: space-between;
+  text-align: center;
+}
+.skillLogo {
+  border: #151313;
+  display: inline-block;
+  margin-top: 15px;
+}
+.html_green {
+  color: rgb(229, 231, 99);
+}
+
+.css_pink {
+  color: rgb(255, 162, 250);
+}
+
+.js_blue{
+  color: rgb(70, 141, 248);
+}
+
+.vue_green {
+  color: rgb(115, 207, 157);
+}
+
+.bs_purpul {
+  color: rgb(147, 72, 233);
 }
 
 //.site_link {

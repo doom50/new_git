@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 body {
@@ -21,6 +21,7 @@ main h2 {
   text-align: center;
   margin: 10px 0 15px;
   font-size: 20px;
+  display: inline-block;
 }
 
 main p {
@@ -28,18 +29,32 @@ main p {
   letter-spacing: 0.2em;
   color: #1d1c1c;
   text-align: center;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: normal;
   margin: 5px 5px;
   /* width: 40  0px; */
   display: inline-block;
 }
 
+.about {
+  font-family: helvetica;
+  text-align: center;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: helvetica;
+  font-weight: normal;
+  font-size: 1.3em;
+  letter-spacing: 0.2em;
+}
+
 .top {
   margin: 0;
   padding: 0;
   margin-bottom: 0px;
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -65,6 +80,7 @@ h3 {
 }
 
 .about-wrap {
+  background-color: rgba(49, 178, 238, 0.13);
   width: 100%;
   padding-top: 20px;
   padding-bottom: 60px;
@@ -72,25 +88,24 @@ h3 {
 
 .new {
   font-family: helvetica;
-  position: absolute;
+  text-align: center;
+  display: inline-block;
+  height: 500px;
+  position: relative;
+}
+
+.neu {
+  position: relative;
+  font-size: normal;
 }
 
 .new_text {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  margin-right: 0px;
-  font-size: medium;
-  width: 70%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  top: 100px;
+  left: 300px;
 }
 
 .profiel-wrap {
-  width: 100%;
+  max-width: 100%;
   padding-top: 20px;
   padding-bottom: 60px;
 }
@@ -101,7 +116,7 @@ h3 {
 }
 
 .maintext {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 30px;
   font-size: normal;
   width: 70%;
@@ -109,6 +124,7 @@ h3 {
 
 .maintext.skiltext {
   font-size: 1.2em;
+  width: max-content;
 }
 
 p a .glo {
@@ -132,19 +148,13 @@ p a .glo::after {
   width: 100%;
   height: 0.5px;
   background: #333;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 p a .glo:hover::after {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 #workslink {
@@ -160,7 +170,6 @@ header {
   text-align: center;
   letter-spacing: 0.3em;
   padding: 1px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: white;
@@ -179,25 +188,13 @@ header p img {
   text-align: left;
 }
 
-.about {
-  font-family: helvetica;
-  text-align: center;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: helvetica;
-  font-weight: normal;
-  font-size: 7px;
-  letter-spacing: 0.2em;
+.text-dark {
+  font-size: small;
 }
 
 .title {
   font-weight: normal;
   text-rendering: optimizeLegibility;
-  margin: 0;
   margin-bottom: 8px;
   line-height: 150%;
   font-size: 15px;
@@ -226,7 +223,6 @@ hr .divider2 {
 }
 
 .st {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -298,7 +294,7 @@ hr .divider2 {
 .hob p {
   font-family: helvetica;
   font-weight: lighter;
-  font-size: 0.8em;
+  font-size: 2.5em;
   text-align: left;
   width: 80%;
 }
@@ -325,7 +321,7 @@ a {
   color: #151313;
   text-decoration: none;
   font-family: sans-serif;
-  font-size: 1.1em;
+  font-size: 2em;
 }
 
 .favorit {
@@ -337,6 +333,7 @@ a {
 .fav_text {
   text-align: left;
   margin-top: 25px;
+  font-size: medium;
 }
 
 .fav_contents {
@@ -344,29 +341,24 @@ a {
 }
 
 h6 {
-  font-size: 1.4em;
+  font-size: 2em;
   margin-bottom: 2px;
 }
 
 .marktext_01 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(50%, #118cf157));
   background: linear-gradient(transparent 80%, #118cf157 50%);
 }
 
 .marktext_02 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(50%, #f1119465));
   background: linear-gradient(transparent 80%, #f1119465 50%);
 }
 
 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: white;
   color: #666;
   list-style-type: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding-left: 0;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.2em;
@@ -396,19 +388,15 @@ li {
 
 .prof_img {
   max-width: 25%;
-  margin: 15px 100px 12px;
+  margin: 15px 0px 12px;
 }
 
 .sns {
   background-color: black;
   margin: 0 auto;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 40px;
 }
 
@@ -468,19 +456,46 @@ img {
 }
 
 @media (min-width: 601px) {
-  padding: 50px;
-}
-
-.sample02 .swiper-button-prev,
-.sample02 .swiper-button-next {
-  display: block;
-}
-
-.sample02 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 10px;
+  .sample02 .swiper-button-prev,
+  .sample02 .swiper-button-next {
+    display: block;
+  }
+  .sample02 .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 10px;
+  }
 }
 
 .twpjURL {
   width: 50vh;
+}
+
+.skill-wrapper {
+  text-align: center;
+}
+
+.skillLogo {
+  border: #151313;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.html_green {
+  color: #e5e763;
+}
+
+.css_pink {
+  color: #ffa2fa;
+}
+
+.js_blue {
+  color: #468df8;
+}
+
+.vue_green {
+  color: #73cf9d;
+}
+
+.bs_purpul {
+  color: #9348e9;
 }
 /*# sourceMappingURL=mobile.css.map */
