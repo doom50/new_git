@@ -19,7 +19,7 @@ main {
     letter-spacing: 0.2em;
     color: rgb(29, 28, 28);
     text-align: center;
-    margin: 10px 0 15px;
+    margin: 10px 0px 0px;
     font-size: 20px;
     display: inline-block;
   }
@@ -80,6 +80,11 @@ h3 {
   color: #151313;
   text-align: center;
   margin-top: 40px;
+  font-size: 1.3em;
+}
+
+h4 {
+  font-size: 1.3em;
 }
 
 .about-wrap {
@@ -125,7 +130,7 @@ left: 300px;
 .maintext {
   margin-top: 15px;
   margin-bottom: 30px;
-  font-size: normal;
+  font-size: 1.2em;
   width: 70%;
   &.skiltext {
     font-size: 1.2em;
@@ -298,7 +303,7 @@ hr .divider2 {
   p {
     font-family: helvetica;
     font-weight: lighter;
-    font-size: 2.5em;
+    font-size: 2.8em;
     text-align: left;
     width: 80%;
   }
@@ -310,11 +315,11 @@ p .movieEx {
 
 .hob_title {
   font-family: helvetica;
-  font-weight: bolder;
+  //font-weight: bolder;
   letter-spacing: 0.2em;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .o-3column {
@@ -342,11 +347,11 @@ a {
 }
 
 .fav_contents {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 h6 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-bottom: 2px;
 }
 
@@ -485,7 +490,7 @@ img {
 .skillLogo {
   border: #151313;
   display: inline-block;
-  margin-top: 15px;
+  //margin-top: 15px;
 }
 .html_green {
   color: rgb(229, 231, 99);

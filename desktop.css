@@ -29,6 +29,10 @@ h1 {
   padding: 0 10px 0;
 }
 
+.new_text .maintext p {
+  font-size: medium;
+}
+
 .new_text .new {
   text-align: center;
   margin-top: 100px;
