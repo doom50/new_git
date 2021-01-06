@@ -115,9 +115,6 @@ h4 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  position: absolute;
-  top: 20px;
-  margin-top: 10px;
 }
 
 .profiel-wrap {
