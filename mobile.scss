@@ -20,7 +20,7 @@ main {
     color: rgb(29, 28, 28);
     text-align: center;
     margin: 10px 0px 0px;
-    font-size: 20px;
+    font-size: 25px;
     display: inline-block;
   }
 
@@ -30,7 +30,7 @@ main {
     color: rgb(29, 28, 28);
     text-align: center;
     font-weight: normal;
-    font-size: normal;
+    //font-size: normal;
     margin: 5px 5px;
 
     /* width: 40  0px; */
@@ -43,7 +43,7 @@ main {
   font-family: helvetica;
   text-align: center;
   height: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   display: block;
   margin-left: auto;
@@ -74,6 +74,11 @@ h1 {
   line-height: 4em;
 }
 
+h2 {
+
+font-weight: lighter;  font-size: 25px;
+}
+
 h3 {
   font-family: "Noto Sans JP", serif;
   letter-spacing: 0.2em;
@@ -88,7 +93,7 @@ h4 {
 }
 
 .about-wrap {
-   background-color: rgba(49, 178, 238, 0.13);
+   background-color: rgb(255, 255, 255);
   width: 100%;
   padding-top: 20px;
   padding-bottom: 60px;
@@ -106,13 +111,15 @@ h4 {
 .neu {
   position: relative;
   font-size: normal;
+  width: 500px;
+    margin: 0 auto;
 }
 
 .new_text {
-//width: max-content;
-//position: absolute;
-top: 100px;
-left: 300px;
+width: max-content;
+position: absolute;
+top: 20px;
+margin-top: 10px;
 }
 
 .profiel-wrap {
@@ -227,6 +234,42 @@ hr .divider2 {
   border-top: 1px solid #242a2c;
   margin-bottom: 2px;
 }
+
+//学習内容
+.skill-wrapper {
+  //display: flex;
+  //justify-content: space-between;
+  text-align: center;
+}
+.skillLogo {
+  border: #151313;
+  display: inline-block;
+  //margin-top: 15px;
+}
+.html_green {
+  color: rgb(229, 231, 99);
+}
+
+.css_pink {
+  color: rgb(255, 162, 250);
+}
+
+.js_blue{
+  color: rgb(70, 141, 248);
+}
+
+.vue_green {
+  color: rgb(115, 207, 157);
+}
+
+.bs_purpul {
+  color: rgb(147, 72, 233);
+}
+
+.website-txt {
+text-align: center;
+}
+
 .works_container {
   height: 150px;
 }
@@ -243,7 +286,7 @@ hr .divider2 {
   margin-bottom: 30px;
 
   h2 {
-    padding: 40px 0 60px;
+    padding: 40px 0 10px;
     letter-spacing: 0.2em;
     font-family: "Merriweather", serif;
   }
@@ -260,13 +303,12 @@ hr .divider2 {
 .dips {
   text-align: left;
   padding: 0 50px 0px;
-  max-width: 640px;
+  max-width: max-content;
   margin: auto;
   letter-spacing: 0.2em;
   font-family: helvetica;
   font-weight: normal;
-
-  /* font-size: 9px; */
+  font-size: 1.4em;
 }
 
 .btn_form {
@@ -391,7 +433,7 @@ li {
   padding-left: 40px;
   width: 100%;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2em;
   list-style-type: disc;
   display: block !important;
 }
@@ -430,6 +472,8 @@ li {
   margin-top: 15px;
   margin-bottom: 2rem;
 }
+
+//swiper部分
 
 .swiper-container {
   width: 100%;
@@ -482,36 +526,7 @@ img {
   width: 50vh;
 }
 
-.skill-wrapper {
-  //display: flex;
-  //justify-content: space-between;
-  text-align: center;
+//フォーム部分のコンテナ
+.form_contener {
+  margin-top: 30px;
 }
-.skillLogo {
-  border: #151313;
-  display: inline-block;
-  //margin-top: 15px;
-}
-.html_green {
-  color: rgb(229, 231, 99);
-}
-
-.css_pink {
-  color: rgb(255, 162, 250);
-}
-
-.js_blue{
-  color: rgb(70, 141, 248);
-}
-
-.vue_green {
-  color: rgb(115, 207, 157);
-}
-
-.bs_purpul {
-  color: rgb(147, 72, 233);
-}
-
-//.site_link {
-
-//}

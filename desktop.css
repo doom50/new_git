@@ -25,6 +25,8 @@ h1 {
 
 .new_text .maintext.skiltext {
   font-size: 1.2em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   padding: 0 10px 0;
 }

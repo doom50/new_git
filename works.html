@@ -51,17 +51,25 @@
     <!--メインコンテナ------------------------------------------------>
     <div class="container">
         <article class=" works_container">
-            <h2 class="title">WORKS</h2>
-            <hr class="divider">
-            <div id="pjtw" class="todo_container">
-                <div class="container">
-                    <h2>WebSite</h2>
-                    <p class="dips">
-                        <br>渡航歴が多い「台湾」について、「その魅力を紹介する」ことをテーマに作成中です。
-                    </p>
-                    <div class="url_wrap">
-                        <span class="url">URL</span>
-                        <a href="https://elastic-chandrasekhar-278d76.netlify.app/index.html">Get In Taiwan.</a>
+            <div class="about-wrap">
+                <div class="container w-75">
+                    <div class="about-wrap">
+                        <h2 class="title">WORKS</h2>
+                        <hr class="divider">
+                        <div class="about">
+                            <h2 class="works-webpage-intro">Webページ習作</h2>
+                            <div class="neu">
+                                <p class="new_text">
+                                    <span class="badge badge-dark">New</span>　　　<span
+                                        class="marktext_02">新しい習作webページを作成</span>しました。<br><br>
+                                    New WEB　Site　→
+                                    <a href="https://elastic-chandrasekhar-278d76.netlify.app/index.html"
+                                        class="text-dark">LET'S　GET　IN　TAIWAN</a>
+                                    <br><br><br>
+                                </p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,7 +83,7 @@
                         ３　タスクが完了したらチェックボックスをクリック<br>
                         ４　リストから消したい場合は、削除ボタンから削除</p>
                 </div>
-                <form v-on:submit.prevent>
+                <form v-on:submit.prevent class='form_contener'>
 
                     <input type="text" v-model="newItem">
                     <button class="btn btn-light btn-sm btn_form" v-on:click="addItem">
@@ -122,7 +130,7 @@
                 crossorigin="anonymous"></script>
 
         </article>
-        </div>
+    </div>
 </body>
 
 </html>

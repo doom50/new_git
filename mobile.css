@@ -20,7 +20,7 @@ main h2 {
   color: #1d1c1c;
   text-align: center;
   margin: 10px 0px 0px;
-  font-size: 20px;
+  font-size: 25px;
   display: inline-block;
 }
 
@@ -30,7 +30,6 @@ main p {
   color: #1d1c1c;
   text-align: center;
   font-weight: normal;
-  font-size: normal;
   margin: 5px 5px;
   /* width: 40  0px; */
   display: inline-block;
@@ -40,7 +39,7 @@ main p {
   font-family: helvetica;
   text-align: center;
   height: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   display: block;
   margin-left: auto;
@@ -55,6 +54,7 @@ main p {
   margin: 0;
   padding: 0;
   margin-bottom: 0px;
+  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -71,6 +71,11 @@ h1 {
   line-height: 4em;
 }
 
+h2 {
+  font-weight: lighter;
+  font-size: 25px;
+}
+
 h3 {
   font-family: "Noto Sans JP", serif;
   letter-spacing: 0.2em;
@@ -85,7 +90,7 @@ h4 {
 }
 
 .about-wrap {
-  background-color: rgba(49, 178, 238, 0.13);
+  background-color: white;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 60px;
@@ -102,11 +107,17 @@ h4 {
 .neu {
   position: relative;
   font-size: normal;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .new_text {
-  top: 100px;
-  left: 300px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 20px;
+  margin-top: 10px;
 }
 
 .profiel-wrap {
@@ -129,6 +140,8 @@ h4 {
 
 .maintext.skiltext {
   font-size: 1.2em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
 }
 
@@ -153,13 +166,19 @@ p a .glo::after {
   width: 100%;
   height: 0.5px;
   background: #333;
-  transform: scale(0, 1);
-  transform-origin: center top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 p a .glo:hover::after {
-  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 #workslink {
@@ -175,6 +194,7 @@ header {
   text-align: center;
   letter-spacing: 0.3em;
   padding: 1px;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: white;
@@ -223,11 +243,45 @@ hr .divider2 {
   margin-bottom: 2px;
 }
 
+.skill-wrapper {
+  text-align: center;
+}
+
+.skillLogo {
+  border: #151313;
+  display: inline-block;
+}
+
+.html_green {
+  color: #e5e763;
+}
+
+.css_pink {
+  color: #ffa2fa;
+}
+
+.js_blue {
+  color: #468df8;
+}
+
+.vue_green {
+  color: #73cf9d;
+}
+
+.bs_purpul {
+  color: #9348e9;
+}
+
+.website-txt {
+  text-align: center;
+}
+
 .works_container {
   height: 150px;
 }
 
 .st {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -240,7 +294,7 @@ hr .divider2 {
 }
 
 .todo_container h2 {
-  padding: 40px 0 60px;
+  padding: 40px 0 10px;
   letter-spacing: 0.2em;
   font-family: "Merriweather", serif;
 }
@@ -256,12 +310,14 @@ hr .divider2 {
 .dips {
   text-align: left;
   padding: 0 50px 0px;
-  max-width: 640px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   margin: auto;
   letter-spacing: 0.2em;
   font-family: helvetica;
   font-weight: normal;
-  /* font-size: 9px; */
+  font-size: 1.4em;
 }
 
 .btn_form {
@@ -350,19 +406,24 @@ h6 {
 }
 
 .marktext_01 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(50%, #118cf157));
   background: linear-gradient(transparent 80%, #118cf157 50%);
 }
 
 .marktext_02 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(50%, #f1119465));
   background: linear-gradient(transparent 80%, #f1119465 50%);
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: white;
   color: #666;
   list-style-type: none;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-left: 0;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.2em;
@@ -385,7 +446,7 @@ li {
   padding-left: 40px;
   width: 100%;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2em;
   list-style-type: disc;
   display: block !important;
 }
@@ -399,8 +460,12 @@ li {
   background-color: black;
   margin: 0 auto;
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 40px;
 }
 
@@ -473,32 +538,7 @@ img {
   width: 50vh;
 }
 
-.skill-wrapper {
-  text-align: center;
-}
-
-.skillLogo {
-  border: #151313;
-  display: inline-block;
-}
-
-.html_green {
-  color: #e5e763;
-}
-
-.css_pink {
-  color: #ffa2fa;
-}
-
-.js_blue {
-  color: #468df8;
-}
-
-.vue_green {
-  color: #73cf9d;
-}
-
-.bs_purpul {
-  color: #9348e9;
+.form_contener {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=mobile.css.map */
