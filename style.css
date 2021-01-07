@@ -39,7 +39,7 @@ main p {
   font-family: helvetica;
   text-align: center;
   height: auto;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 10px;
   display: block;
   margin-left: auto;
@@ -107,14 +107,12 @@ h4 {
 .neu {
   position: relative;
   font-size: normal;
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .new_text {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  margin-top: 10px;
 }
 
 .profiel-wrap {
@@ -219,7 +217,6 @@ header p img {
   text-rendering: optimizeLegibility;
   margin-bottom: 8px;
   line-height: 150%;
-  font-size: 15px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.2em;
   color: #151313;
@@ -247,6 +244,7 @@ hr .divider2 {
 .skillLogo {
   border: #151313;
   display: inline-block;
+  margin-top: 15px;
 }
 
 .html_green {
@@ -377,7 +375,7 @@ p .movieEx {
 a {
   color: #151313;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 2em;
 }
 
